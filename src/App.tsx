@@ -4,6 +4,7 @@ import './App.css'
 import { Provider } from './components/ui/provider'
 import { useState } from 'react'
 import { useSavedCities, useCityActions } from './store/cityStore'
+import { Tag } from '@chakra-ui/react'
 
 function App() {
   const [selectedCity, setSelectedCity] = useState<{name: string, latitude: number, longitude: number} | null>(null)
@@ -33,18 +34,13 @@ function App() {
               <p style={{ color: '#888' }}>Click on markers to add cities to your list</p>
             ) : (
               savedCities.map((cityName) => (
-                <span 
+                <Tag.Root 
                   key={cityName}
-                  style={{
-                    padding: '4px 12px',
-                    backgroundColor: '#646cff',
-                    color: 'white',
-                    borderRadius: 16,
-                    fontSize: 14
-                  }}
+                  colorPalette="blue"
+                  size="md"
                 >
-                  {cityName}
-                </span>
+                  <Tag.Label>{cityName}</Tag.Label>
+                </Tag.Root>
               ))
             )}
           </div>
