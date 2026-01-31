@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+
+.maplibregl-popup-close-button {
+  color: black;
+  font-size: 20px;
+}
+
+.maplibregl-popup-close-button:hover {
+  background-color: #f0f0f0;
+}

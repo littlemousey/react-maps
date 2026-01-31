@@ -66,3 +66,11 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.city-popup {
+  color: black;
+}
+
+.maplibregl-popup-close-button {
+  color: black;
+}
