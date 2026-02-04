@@ -1,5 +1,10 @@
 # React MapLibre
 
+A simple React app with Maplibre, Zustand and Chakra UI.
+
+<img width="878" height="766" alt="image" src="https://github.com/user-attachments/assets/331a94bc-6596-44eb-804c-5f4ac80266cb" />
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
